@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="pull_to_refresh_header">买正品药上健客</string>
+  <string name="pull_to_refresh_pull_label">下拉刷新</string>
+  <string name="pull_to_refresh_release_label">松开以刷新</string>
+  <string name="pull_to_refresh_refreshing_label">正在加载</string>
+</resources>
