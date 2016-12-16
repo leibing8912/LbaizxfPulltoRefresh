@@ -1,22 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="cn.jianke.lbaizxfpulltorefresh" >
+    package="cn.jianke.lbaizxfpulltorefresh">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:windowSoftInputMode="stateUnchanged|adjustPan"
         android:launchMode="singleTop"
         android:screenOrientation="portrait"
-        android:theme="@style/AppStartThemeBg" >
-        <activity android:name=".module.MainActivity" >
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Black.NoTitleBar"
+        android:windowSoftInputMode="stateUnchanged|adjustPan">
+
+        <!-- 首页 -->
+        <activity
+            android:name=".module.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppStartThemeBg"
+            android:windowSoftInputMode="stateUnchanged|adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- 仿健客页 -->
+        <activity
+            android:name=".module.JkActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnchanged|adjustPan" />
+        <!-- 仿京东页 -->
+        <activity
+            android:name=".module.JdActivity"
+            android:label="@string/title_activity_jd"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnchanged|adjustPan" />
+        <activity
+            android:name=".module.TmallActivity"
+            android:label="@string/title_activity_tmall"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnchanged|adjustPan"/>
     </application>
 
 </manifest>

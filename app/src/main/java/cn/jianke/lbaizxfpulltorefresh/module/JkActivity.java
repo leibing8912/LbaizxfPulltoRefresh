@@ -2,7 +2,6 @@ package cn.jianke.lbaizxfpulltorefresh.module;
 
 import android.app.Activity;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.widget.Toast;
@@ -12,12 +11,12 @@ import cn.jianke.lbaizxfpulltorefresh.widget.JkPullToRefreshScrollView;
 import cn.jianke.lbaizxfpulltorefresh.widget.ObservableScrollView;
 
 /**
- * @className: MainActivity
- * @classDescription: 测试首页
+ * @className: JkActivity
+ * @classDescription: 仿健客页
  * @author: leibing
  * @createTime: 2016/12/15
  */
-public class MainActivity extends Activity implements ObservableScrollView.ScrollViewListener{
+public class JkActivity extends Activity implements ObservableScrollView.ScrollViewListener{
     // 下拉刷新滑动布局实例
     private JkPullToRefreshScrollView pullUpSv;
     // 自定义Handler
@@ -61,7 +60,7 @@ public class MainActivity extends Activity implements ObservableScrollView.Scrol
                             if (pullUpSv != null)
                                 pullUpSv.onRefreshComplete();
                         }
-                    }, 3000);
+                    }, 2000);
                 }
             }
         });
@@ -74,6 +73,6 @@ public class MainActivity extends Activity implements ObservableScrollView.Scrol
 
     @Override
     public void onScrollToBottom() {
-        Toast.makeText(MainActivity.this, "已经滑动到底部！",Toast.LENGTH_SHORT).show();
+        Toast.makeText(JkActivity.this, "已经滑动到底部！",Toast.LENGTH_SHORT).show();
     }
 }

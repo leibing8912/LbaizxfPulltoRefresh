@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_jd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.jianke.lbaizxfpulltorefresh.module.JdActivity">
+    <cn.jianke.lbaizxfpulltorefresh.widget.jd.JdRefreshLayout
+        android:id="@+id/jdly_pull_up"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:background="@android:color/white"
+        cube_ptr:ptr_duration_to_close="100"
+        cube_ptr:ptr_duration_to_close_header="500"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorAccent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/jd"/>
+        </LinearLayout>
+    </cn.jianke.lbaizxfpulltorefresh.widget.jd.JdRefreshLayout>
+</RelativeLayout>
