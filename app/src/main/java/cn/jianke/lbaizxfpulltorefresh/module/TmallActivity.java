@@ -39,7 +39,7 @@ public class TmallActivity extends Activity {
                             if (mPullUpTmly != null)
                                 mPullUpTmly.refreshComplete();
                         }
-                    }, 2000);
+                    }, 1500);
             }
         });
     }

@@ -39,7 +39,7 @@ public class JdActivity extends Activity {
                             if (mPullUpJdly != null)
                                 mPullUpJdly.refreshComplete();
                         }
-                    }, 3000);
+                    }, 1500);
             }
         });
     }

@@ -60,7 +60,7 @@ public class JkActivity extends Activity implements ObservableScrollView.ScrollV
                             if (pullUpSv != null)
                                 pullUpSv.onRefreshComplete();
                         }
-                    }, 2000);
+                    }, 1500);
                 }
             }
         });
