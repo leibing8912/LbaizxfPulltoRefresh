@@ -55,6 +55,22 @@ public class ImageLoader {
     }
 
     /**
+     * 加载Gif图资源
+     * @author leibing
+     * @createTime 2016/12/17
+     * @lastModify 2016/12/17
+     * @param context 上下文
+     * @param imageView 图片显示控件
+     * @param url 图片链接
+     * @return
+     */
+    public void loadGif(Context context, ImageView imageView, String url){
+        Glide.with(context).load(url).asGif().
+                diskCacheStrategy(DiskCacheStrategy.SOURCE).into(imageView);
+
+    }
+
+    /**
      * 图片加载
      * @author leibing
      * @createTime 2016/8/15

@@ -106,7 +106,7 @@ public class TmallRefreshHeader extends FrameLayout implements PtrUIHandler {
         // 设置ImageView ScaleType
         logoIv.setScaleType(ImageView.ScaleType.FIT_CENTER);
         // 加载Logo资源
-        ImageLoader.getInstance().load(mContext, logoIv,
+        ImageLoader.getInstance().loadGif(mContext, logoIv,
                 ImageLoader.getDrawableSource(mContext, R.drawable.tm_mui_bike));
         // 添加布局到当前控件
         addView(view);
