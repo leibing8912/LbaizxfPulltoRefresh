@@ -31,5 +31,6 @@ dependencies {
     compile 'jp.wasabeef:glide-transformations:2.0.1'
     // use base library
     compile project(':library')
+    // 依赖下拉刷新PtrFrameLayout组件
     compile 'in.srain.cube:ultra-ptr:1.0.11'
 }

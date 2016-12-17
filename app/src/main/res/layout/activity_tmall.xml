@@ -5,6 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="cn.jianke.lbaizxfpulltorefresh.module.TmallActivity">
+    <!-- ptr_resistance 设置下拉的阻尼系数，值越大感觉越难下拉 -->
+    <!-- ptr_ratio_of_header_height_to_refresh 设置下拉的阻尼系数，值越大感觉越难下拉 -->
+    <!-- ptr_duration_to_close 设置下拉回弹的时间 -->
+    <!-- ptr_duration_to_close_header 设置刷新完成，头部回弹时间，注意和前一个进行区别 -->
+    <!-- ptr_keep_header_when_refresh 设置刷新的时候是否保持头部 -->
+    <!-- ptr_pull_to_fresh 设置下拉过程中执行刷新，我们一般设置为false -->
     <cn.jianke.lbaizxfpulltorefresh.widget.tmall.TmallRefreshLayout
         xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
         android:id="@+id/tmly_pull_up"
